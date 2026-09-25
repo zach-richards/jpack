@@ -1,8 +1,4 @@
-#include <fstream>
-#include <string>
-#include <unordered_map>
-#include <limits>   // Required for std::numeric_limits
-#include <iostream> // For std::endl
+#include "dictionary.hpp"
 
 // create a dictionary from a JSON file and return it
 std::unordered_map<std::string, std::string> createDictionary(std::ifstream &inputFile, std::ofstream &outputFile) {
