@@ -1,0 +1,45 @@
+0A                    DICTIONARY
+
+08                    8 entries
+
+00 06 "string"
+01 06 "number"
+02 07 "boolean"
+03 04 "null"
+04 05 "array"
+05 06 "object"
+06 04 "name"
+07 03 "age"
+
+01                    OBJECT
+
+03 00                 KEY 0 ("string")
+04 05 "Hello"         STRING, length 5
+
+03 01                 KEY 1 ("number")
+05 2A                 INTEGER 42
+
+03 02                 KEY 2 ("boolean")
+06                    TRUE
+
+03 03                 KEY 3 ("null")
+08                    NULL
+
+03 04                 KEY 4 ("array")
+02                    ARRAY
+
+04 05 "apple"         STRING, length 5
+05 7B                 INTEGER 123
+07                    FALSE
+
+03 05                 KEY 5 ("object")
+01                    OBJECT
+
+03 06                 KEY 6 ("name")
+04 04 "Zach"          STRING, length 4
+
+03 07                 KEY 7 ("age")
+05 14                 INTEGER 20
+
+00                    END object
+00                    END object

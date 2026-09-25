@@ -1,0 +1,15 @@
+{
+  "string": "Hello",
+  "number": 42,
+  "boolean": true,
+  "null": null,
+  "array": [
+    "apple",
+    123,
+    false
+  ],
+  "object": {
+    "name": "Zach",
+    "age": 20
+  }
+}
