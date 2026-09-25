@@ -3,10 +3,12 @@
 void writeDictionaryToFile(std::ofstream &outputFile, const std::unordered_map<std::string, std::string> &dictionary) {
     outputFile << "0A" << std::endl << std::endl; // Write dict code
 
-    int dictSize = dictionary.size();
+    outputFile << dictionary.size() << std::endl << std::endl; // Write number of entries
 
+    int iteration = 0;
     for (const auto &pair : dictionary) {
-        outputFile << pair.first << ":" << pair.second << std::endl;
+        outputFile << std::setw(4) << std::setfill('0') << iteration << " " << pair.second.length() << " " << pair.second << std::endl;
+        iteration++;
     }
 }
 
